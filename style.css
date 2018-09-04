@@ -1,0 +1,45 @@
+body {
+    background: black
+}
+#heading {
+    display: flex;
+    align-content: center
+
+}
+#title {
+    background: white;
+    font-size: 60px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Anton', sans-serif;
+
+}
+
+#startbtn {
+    margin: 0 auto;
+    font-size: 80px;
+}
+
+.dot {
+    height: 675px;
+    width: 675px;
+    border-radius: 50%;
+    background-color: green;
+    display: inline-block;
+}
+
+.circleparent {
+    display: flex;
+    align-content: center;
+}
+
+.players {
+    color: white;
+    margin-left: 20%;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.collapsible {
+    font-size: 18px;
+}
