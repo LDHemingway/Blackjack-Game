@@ -1,6 +1,12 @@
 body {
-    background: black
+    background: black;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
+main {
+    flex: 1 0 auto;
+  }
 #heading {
     display: flex;
     align-content: center
@@ -42,4 +48,10 @@ body {
 
 .collapsible {
     font-size: 18px;
+    margin: 0 auto;
+    border: 0px;
+}
+
+footer {
+    color: white;
 }

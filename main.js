@@ -1,9 +1,11 @@
-https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
+
 
 $(document).ready(function() {
     console.log("Ready")
 
-
+$(document).ready(function(){
+  $('.collapsible').collapsible();
+});
 
 let playerHand = 0
 let dealerHand = 0
