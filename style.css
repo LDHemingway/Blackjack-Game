@@ -84,9 +84,10 @@ footer {
     color: black;
 }
 
-a:visited {
+a:visited, a:link {
     color: white;
 }
+
 #dealer {
     display: flex;
     align-content: stretch;
