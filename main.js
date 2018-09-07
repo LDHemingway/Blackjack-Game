@@ -474,6 +474,18 @@ $('#wins').html(wins)
             icon: "error"
           });
         }
+      if (dealerHandSum > 21 && playerHandSum > 21) {
+        $("#yourscore").html(playerHandSum)
+        $("#dealerscore").html(dealerHandSum)
+        $("#hit").hide()
+        $("#stand").hide()
+        wins++
+        swal({
+          title: "You both bust!",
+          text: "You and the dealer went over 21.",
+          icon: "error"
+        });
+      }
       if (dealerHandSum === 21) {
         $("#yourscore").html(playerHandSum)
         $("#dealerscore").html(dealerHandSum)
