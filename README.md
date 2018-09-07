@@ -14,3 +14,9 @@ I created a simple blackjack game, where the user's goal is to have a hand value
 ## Features
 * SweetAlert displays with result message
 * Redeal function
+
+## Wireframe
+
+(images/Wireframe_1.JPG)
+(images/Wireframe_2.JPG)
+(images/Wireframe_3.JPG)
