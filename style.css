@@ -142,3 +142,8 @@ a:visited {
 #gameboard {
     margin-top: -20px;
 }
+
+#scores {
+    display: flex;
+    justify-content: space-between;
+}

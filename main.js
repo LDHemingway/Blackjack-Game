@@ -13,6 +13,7 @@ $('#wins').html(wins)
   $(".buttons").hide()
   $("#gameboard").hide()
   $('#winid').hide()
+  $('#scores').hide()
 
   var cardArray = [{
       suit: "hearts",
@@ -341,6 +342,7 @@ $('#wins').html(wins)
     $("#deal").hide()
     $("#redeal").show()
     $("#gameboard").show()
+    $('#scores').show()
 
     let randomCard = cardArray[Math.floor(Math.random() * cardArray.length)];
     playerHand.push(randomCard);
@@ -376,6 +378,8 @@ $('#wins').html(wins)
     console.log("player sum", playerHandSum);
 
     if (playerHandSum === 21) {
+      $("#yourscore").html(playerHandSum)
+      $("#dealerscore").html(dealerHandSum)
       $("#hit").hide()
       $("#stand").hide()
       wins++
@@ -387,6 +391,8 @@ $('#wins').html(wins)
       });
     }
     if (dealerHandSum === 21) {
+      $("#yourscore").html(playerHandSum)
+      $("#dealerscore").html(dealerHandSum)
       $("#hit").hide()
       $("#stand").hide()
       swal({
@@ -422,6 +428,8 @@ $('#wins').html(wins)
       console.log("Player sum", playerHandSum);
 
       if (playerHandSum > 21) {
+        $("#yourscore").html(playerHandSum)
+        $("#dealerscore").html(dealerHandSum)
         $("#hit").hide()
         $("#stand").hide()
         swal({
@@ -431,6 +439,8 @@ $('#wins').html(wins)
         });
       }
       if (playerHandSum === 21) {
+        $("#yourscore").html(playerHandSum)
+        $("#dealerscore").html(dealerHandSum)
         $("#hit").hide()
         $("#stand").hide()
         wins++
@@ -442,6 +452,8 @@ $('#wins').html(wins)
         });
       }
       if (dealerHandSum > 21) {
+        $("#yourscore").html(playerHandSum)
+        $("#dealerscore").html(dealerHandSum)
         $("#hit").hide()
         $("#stand").hide()
         wins++
@@ -451,7 +463,20 @@ $('#wins').html(wins)
           icon: "success"
         });
       }
+      if (playerHandSum > 21 && playerHandSum === dealerHandSum) {
+          $("#yourscore").html(playerHandSum)
+          $("#dealerscore").html(dealerHandSum)
+          $("#hit").hide()
+          $("#stand").hide()
+          swal({
+            title: "You both bust!",
+            text: "Your cards went over 21.",
+            icon: "error"
+          });
+        }
       if (dealerHandSum === 21) {
+        $("#yourscore").html(playerHandSum)
+        $("#dealerscore").html(dealerHandSum)
         $("#hit").hide()
         $("#stand").hide()
         swal({
@@ -484,6 +509,8 @@ $('#wins').html(wins)
       console.log("dealer sum", dealerHandSum);
 
       if (dealerHandSum > playerHandSum && dealerHandSum <= 21) {
+        $("#yourscore").html(playerHandSum)
+        $("#dealerscore").html(dealerHandSum)
         $("#hit").hide()
         $("#stand").hide()
         console.log("dealer win")
@@ -493,6 +520,8 @@ $('#wins').html(wins)
           icon: "error"
         });
       } else if (dealerHandSum < playerHandSum && playerHandSum < 21) {
+        $("#yourscore").html(playerHandSum)
+        $("#dealerscore").html(dealerHandSum)
         $("#hit").hide()
         $("#stand").hide()
         wins++
@@ -504,6 +533,8 @@ $('#wins').html(wins)
       
         });
       } else if (dealerHandSum === playerHandSum) {
+        $("#yourscore").html(playerHandSum)
+        $("#dealerscore").html(dealerHandSum)
         $("#hit").hide()
         $("#stand").hide()
         swal({
@@ -519,6 +550,8 @@ $('#wins').html(wins)
   
 
       $('#redeal').on("click", function () {
+        $("#yourscore").empty()
+        $("#dealerscore").empty()
         $('#dealer').empty()
         $('#player').empty()
         $("#hit").show()
@@ -563,6 +596,8 @@ $('#wins').html(wins)
         console.log("player sum", playerHandSum);
         
         if (playerHandSum > 21) {
+          $("#yourscore").html(playerHandSum)
+          $("#dealerscore").html(dealerHandSum)
           $("#hit").hide()
           $("#stand").hide()
           swal({
@@ -571,7 +606,20 @@ $('#wins').html(wins)
             icon: "error"
           });
         }
+        if (playerHandSum > 21 && playerHandSum === dealerHandSum) {
+          $("#yourscore").html(playerHandSum)
+          $("#dealerscore").html(dealerHandSum)
+          $("#hit").hide()
+          $("#stand").hide()
+          swal({
+            title: "You both bust!",
+            text: "Your cards went over 21.",
+            icon: "error"
+          });
+        }
         if (playerHandSum === 21) {
+          $("#yourscore").html(playerHandSum)
+          $("#dealerscore").html(dealerHandSum)
           $("#hit").hide()
           $("#stand").hide()
           wins++
@@ -583,6 +631,8 @@ $('#wins').html(wins)
           });
         }
         if (dealerHandSum > 21) {
+          $("#yourscore").html(playerHandSum)
+          $("#dealerscore").html(dealerHandSum)
           $("#hit").hide()
           $("#stand").hide()
           wins++
@@ -593,6 +643,8 @@ $('#wins').html(wins)
           });
         }
         if (dealerHandSum === 21) {
+          $("#yourscore").html(playerHandSum)
+          $("#dealerscore").html(dealerHandSum)
           $("#hit").hide()
           $("#stand").hide()
           swal({
