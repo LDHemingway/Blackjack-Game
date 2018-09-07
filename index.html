@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=MedievalSharp" />
     <title>Blackjack</title>
@@ -15,27 +16,31 @@
 <body>
 <div class="container" id="maincontainer">
     <div class="center-align" id="heading">
-        <h1 class="white-text center-align animated bounce" id="title">Blackjack</h1>
+        <h1 class="white-text center-align animated fadeInUp" id="title"><a href="index.html">Blackjack</a></h1>
     </div>
     <div class="center-align white-text" id="suits"><a href="index.html">
-        <h4>&#9824; &#9829; &#9827; &#9830;</h4></a>
+            <h4>&#9824; &#9829; &#9827; &#9830;</h4></a>
+        </div>
+    <div id="circle-container">
+    <span class="dot green lighten-1 white-text center-align animated fadeInDown" id="21">21</span>
     </div>
+    
 
 <div class="container black" id="directions">
         <div class="col s4"></div>
-        <h3 class="left-align white-text slideInLeft" id="howtoplay">How to Play</h3>
+        <h3 class="left-align white-text animated fadeIn" id="howtoplay">How to Play</h3>
         <h7 class="left-align white-text" id="directions">
-            <p>The goal of the game is to get 21 points, or as close to 21 points as possible. Be careful not to go over 21 points, or else it is an automatic loss. Each card has the value for number on it. Face cards are valued at 10, but ace cards can be either 1 or 11.</p> 
-            <p>To begin the game, click "Deal". You and the dealer will both be dealt two cards, but you will only be able to see one of the dealer's cards. If you want to add another card to your hand to get closer to 21, click "hit". If you want to stay with your current hand, click "stand". Whoever scores closest to 21 wins the game. Good luck! </p>
+            <p class="animated fadeIn delay-1s">The goal of the game is to get 21 points, or as close to 21 points as possible. Be careful not to go over 21 points, or else it is an automatic loss. Each card has the value for number on it. Face cards are valued at 10, but ace cards can be either 1 or 11.</p> 
+            <p class="animated fadeIn delay-1s">To begin the game, click "Deal". You and the dealer will both be dealt two cards, but you will only be able to see one of the dealer's cards. If you want to add another card to your hand to get closer to 21, click "hit". If you want to stay with your current hand, click "stand". Whoever scores closest to 21 wins the game. Good luck! </p>
         </h7>
     </div> 
 <div class="container" id="gameboard">
-    <h3 class="white-text center-align">Dealer</h3>
+    <h3 class="white-text center-align" id="players">Dealer</h3>
     <div class="gameboard">
         <div class="green" id="dealer"></div>
         <div class="green" id="player"></div>
     </div>
-    <h3 class="white-text center-align">You</h3>
+    <h3 class="white-text center-align" id="players">You</h3>
 </div>
 
 

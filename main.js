@@ -334,6 +334,7 @@ $('#wins').html(wins)
     $("#redeal").hide();
     $("#winid").show()
     $("#directions").hide()
+    $("#21").hide()
   });
 
   $("#deal").on("click", function () {
