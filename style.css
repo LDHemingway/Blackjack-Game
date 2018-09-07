@@ -20,11 +20,15 @@ body {
     color: white;
     text-align: center;
     margin: 0 auto;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+    font-family: 'MedievalSharp'; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
     text-decoration: none;
     height: 150px;
     margin-top: 40px;
     margin-bottom: -10px;
+    text-transform: uppercase;
 
 }
 
@@ -97,4 +101,10 @@ a:visited {
 .gameboard {
     border: 15px solid #331E19;
     border-radius: 15px;
+}
+
+#buttonparent {
+    display: flex;
+    justify-content: space-evenly;
+
 }

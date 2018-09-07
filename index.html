@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=MedievalSharp" />
     <title>Blackjack</title>
 </head>
 
@@ -30,12 +31,13 @@
     </div> 
 <div class="container" id="gameboard">
     <h3 class="white-text center-align">Dealer</h3>
-    <div class="gameboard z-depth-5">
+    <div class="gameboard">
         <div class="green" id="dealer"></div>
         <div class="green" id="player"></div>
     </div>
     <h3 class="white-text center-align">You</h3>
 </div>
+
 
 <br><br>    
 
@@ -49,19 +51,11 @@
     <div class="container">
             <div class="row">
                 <div class="col s12">
-                    <div class="buttons center">
-                        <div>
-                            <a class="waves-effect waves-light orange lighten-1 btn" id="deal">Deal</a>
-                        </div>
-                        <div>   
-                            <a class="waves-effect waves-light orange lighten-1 btn" id="hit">Hit</a>
-                        </div>
-                        <div>
-                            <a class="waves-effect waves-light orange lighten-1 btn" id="stand">Stand</a>
-                        </div>
-                        <div>
-                            <a class="waves-effect waves-light orange lighten-1 btn" id="redeal">Redeal</a>
-                        </div>
+                    <div class="buttons center-align" id="buttonparent">
+                        <a class="waves-effect waves-light orange lighten-1 btn" id="deal">Deal</a>
+                        <a class="waves-effect waves-light orange lighten-1 btn" id="hit">Hit</a>
+                        <a class="waves-effect waves-light orange lighten-1 btn" id="stand">Stand</a>
+                        <a class="waves-effect waves-light orange lighten-1 btn" id="redeal">Redeal</a>   
                     </div>
                 </div>
             </div>
