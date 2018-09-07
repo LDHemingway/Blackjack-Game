@@ -17,6 +17,6 @@ I created a simple blackjack game, where the user's goal is to have a hand value
 
 ## Wireframe
 
-(images/Wireframe_1.JPG)
-(images/Wireframe_2.JPG)
-(images/Wireframe_3.JPG)
+![first wireframe](images/Wireframe_1.JPG)
+![second wireframe](images/Wireframe_2.JPG)
+![third wireframe](images/Wireframe_3.JPG)
