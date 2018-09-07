@@ -53,14 +53,14 @@ footer {
 }
 
 .card {
-    width: 100px;
-    height: 165px;
+    width: 75px;
+    height: 120px;
     display: inline-block;
 }
 
 .backofcard {
-    width: 100px;
-    height: 165px;
+    width: 75px;
+    height: 120px;
     display: inline-block;
 }
 
@@ -92,4 +92,9 @@ a:visited {
 
 #maincontainer {
     background: black;
+}
+
+.gameboard {
+    border: 15px solid #331E19;
+    border-radius: 15px;
 }
